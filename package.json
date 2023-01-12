@@ -1,12 +1,11 @@
 {
-  "name": "express-boilerplate",
+  "name": "hbs-express-boilerplate",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node src/server.js",
+    "start": "node server.js",
     "test": "mocha --require test/setup.js",
-    "dev": "nodemon src/server.js",
+    "dev": "nodemon server.js -e js,hbs,css",
     "predeploy": "npm audit",
     "deploy": "git push heroku master"
   },
@@ -16,14 +15,30 @@
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
+    "escape-quotes": "^1.0.2",
     "express": "^4.17.1",
+    "hbs": "^4.1.2",
     "helmet": "^3.22.0",
-    "morgan": "^1.10.0"
+    "ip": "^1.1.5",
+    "jspdf": "^2.5.1",
+    "knex": "^0.95.1",
+    "mime-types": "^2.1.35",
+    "morgan": "^1.10.0",
+    "mssql": "^6.3.1",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.8.0",
+    "pdfkit": "^0.13.0",
+    "pg": "^8.7.3",
+    "tedious": "^11.0.5",
+    "validator": "^13.7.0",
+    "winston": "^3.8.2",
+    "winston-daily-rotate-file": "^4.7.1"
   },
   "devDependencies": {
     "chai": "^4.2.0",
     "mocha": "^7.1.2",
-    "nodemon": "^2.0.3",
+    "nodemon": "^2.0.7",
     "supertest": "^4.0.2"
-  }
+  },
+  "description": ""
 }
