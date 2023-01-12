@@ -151,5 +151,6 @@ const vioService = {
         where t."TicketNumber" = '${number}'
         `)
     }
+}
 
     module.exports = vioService
